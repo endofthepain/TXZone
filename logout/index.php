@@ -1,0 +1,9 @@
+<?php 
+session_start();
+unset($_SESSION['sess_user']);
+unset($_SESSION["pages"]);
+unset($_SESSION["number"]);
+unset($_SESSION['currentpage']);
+session_destroy();
+header("location:/");
+?>

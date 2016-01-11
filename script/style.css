@@ -1,0 +1,61 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"Helvetica Neue", Helvetica, Arial;
+}
+#slideshow > div {
+		    position: absolute;
+			width:100%;
+			height:94%;
+			top: 39px;
+}
+#container{
+		    position: fixed;
+			top: 0; 
+			left: 0;
+}
+#topbar{
+	
+	background:#151718;
+	width:100%;
+	height:39px;
+	position:absolute;
+}
+ul{
+	margin:0px;
+	padding:0px;
+}
+
+ul li{
+	list-style:none;
+	display:inline;
+}
+
+ul li a{
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:1px solid #111;
+	display:inline;
+	width:180px;
+	padding:20px;
+	text-decoration: none;
+}
+#Button{
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:1px solid #111;
+	display:inline;
+	width:180px;
+	padding:20px;
+	text-decoration: none;
+}
+#rotator{
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:1px solid #111;
+	display:inline;
+	width:160px;
+	padding:11px;
+	text-decoration: none;
+}
+	

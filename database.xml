@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.4.12
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: 11-Jan-2016 às 18:55
+- Versão do servidor: 5.6.25
+- PHP Version: 5.6.11
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="txzone" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="activation">
+                CREATE TABLE `activation` (
+                  `id` int(250) NOT NULL AUTO_INCREMENT,
+                  `user` varchar(500) NOT NULL,
+                  `code` varchar(500) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="bugreport">
+                CREATE TABLE `bugreport` (
+                  `id` int(150) NOT NULL AUTO_INCREMENT,
+                  `user` varchar(250) NOT NULL,
+                  `title` varchar(100) NOT NULL,
+                  `message` longtext NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="buylog">
+                CREATE TABLE `buylog` (
+                  `id` int(255) NOT NULL AUTO_INCREMENT,
+                  `link` varchar(300) NOT NULL,
+                  `views` varchar(300) NOT NULL,
+                  `owner` varchar(300) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="deposit">
+                CREATE TABLE `deposit` (
+                  `id` int(255) NOT NULL AUTO_INCREMENT,
+                  `user` varchar(600) NOT NULL,
+                  `address` varchar(600) NOT NULL,
+                  `moneycode` mediumtext NOT NULL,
+                  `status` int(1) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="members">
+                CREATE TABLE `members` (
+                  `id` int(250) NOT NULL AUTO_INCREMENT,
+                  `user` varchar(10) NOT NULL,
+                  `email` varchar(350) NOT NULL,
+                  `pass` varchar(250) NOT NULL,
+                  `activated` int(11) NOT NULL,
+                  `BTC` mediumtext NOT NULL,
+                  `nitid` mediumtext NOT NULL,
+                  `btcadd` varchar(300) NOT NULL,
+                  `ban` int(1) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="tasks">
+                CREATE TABLE `tasks` (
+                  `id` int(250) NOT NULL AUTO_INCREMENT,
+                  `user` varchar(250) NOT NULL,
+                  `number` int(7) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="webcontrol">
+                CREATE TABLE `webcontrol` (
+                  `id` int(125) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(250) NOT NULL,
+                  `value` int(1) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="websites">
+                CREATE TABLE `websites` (
+                  `id` int(255) NOT NULL AUTO_INCREMENT,
+                  `link` varchar(300) NOT NULL,
+                  `views` varchar(300) NOT NULL,
+                  `owner` varchar(300) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="withdraw">
+                CREATE TABLE `withdraw` (
+                  `id` int(250) NOT NULL AUTO_INCREMENT,
+                  `user` varchar(250) NOT NULL,
+                  `value` varchar(250) NOT NULL,
+                  `addr` varchar(300) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'txzone'
+    -->
+    <database name="txzone">
+        <!-- Tabela activation -->
+        <!-- Tabela bugreport -->
+        <!-- Tabela buylog -->
+        <!-- Tabela deposit -->
+        <!-- Tabela members -->
+        <!-- Tabela tasks -->
+        <!-- Tabela webcontrol -->
+        <table name="webcontrol">
+            <column name="id">1</column>
+            <column name="name">payment</column>
+            <column name="value">0</column>
+        </table>
+        <!-- Tabela websites -->
+        <!-- Tabela withdraw -->
+    </database>
+</pma_xml_export>
