@@ -77,7 +77,7 @@ If you want to buy me a coffe please make a donation :)
 Bitcoin Address : 1EWhnNyoLpMHvKNETyRCn95tDaJmsPjuSX
 
 
-If you're using this for comercial purposes please donate 10% of the Monthly income to this address: 
+If you're using this for comercial purposes you need to donate 10% of the Monthly income to this address: 
 
 Bitcoin Address : 1BLhtd8vea34j7s9evzNagGU1RFgZCmfK9
 
